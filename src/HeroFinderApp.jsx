@@ -1,4 +1,4 @@
-import { AppRouter } from "./assets/routers/AppRouter"
+import { AppRouter } from "./routers/AppRouter"
 
 export const HeroFinderApp = () => {
   return (
