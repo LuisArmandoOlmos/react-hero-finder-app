@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { HeroList } from "../components";
 
 export const DcPage = () => {
