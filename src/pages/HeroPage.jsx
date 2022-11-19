@@ -16,17 +16,17 @@ export const HeroPage = () => {
     navigate(-1);
   };
 
-  const imageUrl = `/assets/images/${id}.jpg`;
+  const imageUrl = `${hero.url_img}`;
 
   return (
     <div className="bg-black px-6 py-4 min-h-[calc(100vh-3rem)] flex justify-center items-center">
-      <div className="w-full max-w-[40%]">
+      <div className="w-full md:max-w-[80%] xl:max-w-[40%]">
         <h2 className="text-3xl font-bold text-white mb-1">{hero.publisher}</h2>
-        <div className="flex bg-gray rounded-b-xl rounded-tr-xl overflow-hidden border-2 border-primary ">
-          <div className="w-3/5">
+        <div className="md:flex bg-gray rounded-b-xl rounded-tr-xl overflow-hidden border-2 border-primary ">
+          <div className="md:w-3/5">
             <img className="w-full" src={imageUrl} alt="" />
           </div>
-          <div className="p-4 flex flex-col w-2/5 justify-between">
+          <div className="p-4 flex flex-col md:w-2/5 justify-between">
             <div>
               <h3 className="text-primary text-xl font-semibold">
                 {hero.superhero}
@@ -46,7 +46,7 @@ export const HeroPage = () => {
             </div>
             <div>
               <button
-                className="bg-primary text-gray rounded-md w-full text-lg font-medium bottom-4 right-4"
+                className="bg-primary text-gray rounded-md w-full text-lg font-medium bottom-4 right-4 mt-2"
                 onClick={onReturn}
               >
                 Return
