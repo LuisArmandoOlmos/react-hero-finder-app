@@ -7,8 +7,9 @@ export const HeroCard = ({
   alter_ego,
   first_appearance,
   characters,
+  url_img
 }) => {
-  const imageUrl = `/assets/images/${id}.jpg`
+  const imageUrl = `${url_img}`
 
   return (
     <div className="bg-gray border-2 border-primary rounded-lg overflow-hidden">
